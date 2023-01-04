@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Encryption</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <!-- FONT AWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <script src="script.js" async defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img title="logo" class="logoImg" src="./img/Logo.png">
+                <h1 class="tittle">Encriptador de texto</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="left">
+                    <input class="text-input" name="text-input" id="text-input" type="text" placeholder="Ingrese el texto aquí">
+                </div>
+                <div class="right">
+                    <img id="right_img"  src="./img/Muñeco.png" alt="">
+                    <h2 id="texto1">Ningún mensaje fue encontrado</h2>
+                    <textarea id="texto2" title="text">Ingresa el texto que desees encriptar o desencriptar.</textarea>
+                    <button type="button" id="copiar" onclick="copiar()">Copiar</button>
+                </div>
+                <div class="left-buttons">
+                    <i class="fa fa-info-circle" aria-hidden="true" id="infoIcon"> Sólo letra minúsculas y sin acento</i>
+                    <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h4>Desarrollado por <b>Arley Yamid Taborda</b></h4>
+        </footer>
+
+    </body>
+</html>
+

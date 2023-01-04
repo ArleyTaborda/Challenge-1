@@ -1,0 +1,153 @@
+html{
+  font-family: 'Inter', sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #F3F5FC;
+  }
+/* Header */
+  header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+  }
+
+/* Main */
+main{
+  padding: 15px;
+}
+  .container{
+    margin: auto;
+    width: 1000px;
+    height: 850px;
+    padding: 5px;
+  }
+
+  .right{
+    float: right;
+    text-align: center;
+    border-radius: 24px;
+    width: 30%;
+    height: 80%;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  }
+
+  #imgDer{
+    margin-top: 10%;
+    width: 80%;
+    height: auto;
+    left: 900px;
+    top: 283px;
+  }
+  #texto1 #texto2{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #copiar{
+    margin-left: 33%;
+    margin-top: 90%;
+    display: none;
+    padding: 24px;
+    width: 40%;
+    height: 10%;
+    background: #D8DFE8;
+    border-radius: 24px;
+  }
+
+  .text-input{
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    color: #0A3871;
+    width: 80%;
+    height: 60%;
+    background: #F3F5FC;
+    outline: none;
+    border: none;
+    font-size: 20px;
+  }
+
+  .left{
+    float: left;
+    width: 70%;
+    height: 60%;
+    border-radius: 24px;
+  }
+
+  .left-buttons{
+    float: left;
+    width: 70%;
+    height: auto;
+    border-radius: 24px;
+  }
+
+  #btn-encriptar{
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    background: #0A3871;
+    border-radius: 24px;
+    margin-left: 15%;
+    color:#D8DFE8;
+  }
+  #btn-desencriptar{
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    background: #D8DFE8;
+    border-radius: 24px;
+    margin-left: 15%;
+    color: #0A3871;
+  }
+  p{
+    margin-left: 5%;
+  }
+  
+  .logo{
+    width: 100%;
+    float: left;
+  }
+  .logoImg{
+    margin-top: 1%;
+    float: inherit;
+    margin-left: 5%;
+  }
+  .tittle{
+    float: inherit;
+    margin-left: 15%;
+  }
+
+  #texto2{
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    color: #0A3871;
+    width: 80%;
+    height: 20;
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  h4{
+    text-align: center;
+  }
+
+  i{
+    float: left;
+    margin-left: 15%;
+    font-style: normal;
+    margin-top: 1%;
+    color: grey;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+
