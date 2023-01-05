@@ -23,22 +23,22 @@
             </div>
         </header>
         <main>
-            <div class="container">
-                <div class="left">
+                <section class="left">
                     <input class="text-input" name="text-input" id="text-input" type="text" placeholder="Ingrese el texto aquí">
-                </div>
-                <div class="right">
-                    <img id="right_img"  src="./img/Muñeco.png" alt="">
+                </section>
+                <section class="right">
+                    <div id="img-container">
+                        <img id="right_img"  src="./img/Muñeco.png" alt="">
+                    </div>
                     <h2 id="texto1">Ningún mensaje fue encontrado</h2>
                     <textarea id="texto2" title="text">Ingresa el texto que desees encriptar o desencriptar.</textarea>
                     <button type="button" id="copiar" onclick="copiar()">Copiar</button>
-                </div>
-                <div class="left-buttons">
+                </section>
+                <section class="left-buttons">
                     <i class="fa fa-info-circle" aria-hidden="true" id="infoIcon"> Sólo letra minúsculas y sin acento</i>
                     <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
                     <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
-                </div>
-            </div>
+                </section>
         </main>
         <footer>
             <h4>Desarrollado por <b>Arley Yamid Taborda</b></h4>

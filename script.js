@@ -27,3 +27,19 @@ function encriptar(){
     contenido.select();
     document.execCommand('copy');
   }
+
+function responsiveMedia(id, mq) {
+  let breakpoint = window.matchMedia(mq);
+  function responsive(e) {
+    if (e.matches) {
+    document.getElementById(
+        id
+      ).innerHTML = '<img src="./img/Muñeco.png" alt="imagen de muñeco">';
+    } else {
+      document.getElementById(id).innerHTML = "";
+    }
+  }
+  breakpoint.addEventListener("change", responsive);
+  responsive(breakpoint);
+  }
+responsiveMedia("right_img", "(min-width: 1025px)");
