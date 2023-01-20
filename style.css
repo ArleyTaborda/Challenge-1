@@ -59,7 +59,7 @@ header {
 }
 /*Right Section - Output text*/
 .right {
-  width: 15vw;
+  width: 20vw;
   height: 80vh;
   background: white;
   background-image: url(./img/Muñeco.png);
@@ -159,18 +159,17 @@ h4 {
   }
   .main-container {
     width: 80vw;
-    height: 62vh;
+    height: 56vh;
   }
   .left {
     width: 80vw;
-    height: 56vh;
+    height: 52vh;
   }
   .text-input {
     font-size: 1.7rem;
     width: 77vw;
-    height: 60vh;
+    height: 54vh;
   }
-
   .left-buttons {
     margin-top: 2%;
     width: 80vw;
@@ -179,28 +178,27 @@ h4 {
     width: 30vw;
     height: 100%;
   }
-
   .btn-desencriptar {
     width: 30vw;
     height: 100%;
   }
   .right {
-    margin-top: 50px;
+    margin-top: 9%;
     height: 20vh;
     background-image: none;
     width: 80%;
   }
   .texto1 {
-    margin: 5% 0 0 0;
+    margin: 4% 0 0 0;
   }
   .texto2{
     margin: 5% 0 0 0;
-    height: 55%;
+    height: 40%;
   }
   .btn-copiar{
-    margin: -1% 30% 0 30%;
+    margin: 0% 30% 0 30%;
     width: 40%;
-    height: 25%;
+    height: 20%;
   }
   .btn-copiar:hover{
     background: white;
@@ -210,5 +208,50 @@ h4 {
     font-size: 0.8em;
     width: 100%;
     text-align: center;
+  }
+}
+
+/* **********PHONE********** */
+@media screen and (max-width: 600px) {
+  .main-container {
+    width: 80vw;
+    height: 40vh;
+  }
+  .left {
+    width: 80vw;
+    height: 36vh;
+  }
+  .text-input {
+    font-size: 1.7rem;
+    width: 77vw;
+    height: 38vh;
+  }
+  .left-buttons {
+    margin-top: 2%;
+    width: 80vw;
+  }
+  .btn-encriptar {
+    width: 80%;
+    height: 100%;
+  }
+  .btn-desencriptar {
+    margin: 1% 0 0 12%;
+    width: 80%;
+    height: 100%;
+  }
+  .right {
+    margin-top: 30%;
+    background-image: none;
+  }
+  .texto2{
+    resize: auto;
+  }
+  .btn-copiar{
+    margin: -1% 10% 0 10%;
+    width: 80%;
+    height: 45%;
+  }
+  h4 {
+    margin-top: 2%;
   }
 }
