@@ -149,7 +149,7 @@ h4 {
 }
 
 /* **********TABLET********** */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1020px) {
   header {
     height: 6vh;
   }
@@ -212,7 +212,7 @@ h4 {
 }
 
 /* **********PHONE********** */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .main-container {
     width: 80vw;
     height: 40vh;
@@ -240,11 +240,8 @@ h4 {
     height: 100%;
   }
   .right {
-    margin-top: 30%;
+    margin-top: 40%;
     background-image: none;
-  }
-  .texto2{
-    resize: auto;
   }
   .btn-copiar{
     margin: -1% 10% 0 10%;
