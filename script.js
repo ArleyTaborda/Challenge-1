@@ -1,5 +1,6 @@
 function encriptar(){
     var texto = document.getElementById("text-input").value.toLowerCase();
+    texto = texto.toLowerCase();
     var txt_cifrado = texto.replace(/e/igm,"enter").replace(/o/igm,"ober").replace(/i/igm,"imes").replace(/a/igm,"ai").replace(/u/igm,"ufat");
 
     document.getElementById("right").style.backgroundImage = "none";
