@@ -1,45 +1,29 @@
 function encriptar(){
     var texto = document.getElementById("text-input").value.toLowerCase();
-    var txtcifrado = texto.replace(/e/igm,"enter").replace(/o/igm,"ober").replace(/i/igm,"imes").replace(/a/igm,"ai").replace(/u/igm,"ufat");
+    var txt_cifrado = texto.replace(/e/igm,"enter").replace(/o/igm,"ober").replace(/i/igm,"imes").replace(/a/igm,"ai").replace(/u/igm,"ufat");
 
-    document.getElementById("right_img").style.display = "none";
+    document.getElementById("right").style.backgroundImage = "none";
     document.getElementById("texto1").style.display = "none";
     document.getElementById("copiar").style.display = "show";
-    document.getElementById("texto2").innerHTML = txtcifrado;
+    document.getElementById("texto2").innerHTML = txt_cifrado;
     document.getElementById("text-input").innerHTML = " ";
     document.getElementById("copiar").style.display = "inherit";
+
   }
 
   function desencriptar() {
     var texto = document.getElementById("text-input").value.toLowerCase();
-    var txtcifrado = texto.replace(/enter/igm,"e").replace(/ober/igm,"o").replace(/imes/igm,"i").replace(/ai/igm,"a").replace(/ufat/igm,"u");
+    var txt_cifrado = texto.replace(/enter/igm,"e").replace(/ober/igm,"o").replace(/imes/igm,"i").replace(/ai/igm,"a").replace(/ufat/igm,"u");
 
-    document.getElementById("right_img").style.display = "none";
+    document.getElementById("right").style.backgroundImage = "none";
     document.getElementById("texto1").style.display = "none";
     document.getElementById("copiar").style.display = "show";
-    document.getElementById("texto2").innerHTML = txtcifrado;
+    document.getElementById("texto2").innerHTML = txt_cifrado;
     document.getElementById("text-input").innerHTML = " ";
     document.getElementById("copiar").style.display = "inherit";
   }
 
   function copiar() {
-    var contenido = document.querySelector("#texto2");
-    contenido.select();
-    document.execCommand('copy');
+    var encrypted_text = document.getElementById("texto2");
+    navigator.clipboard.writeText(encrypted_text.value).then(()=> {console.log("Texto copiado exitosamente"); alert("Texto copiado exitosamente");}).catch(err => {console.error("Error: ", err); alert("Error: ") + err});
   }
-
-function responsiveMedia(id, mq) {
-  let breakpoint = window.matchMedia(mq);
-  function responsive(e) {
-    if (e.matches) {
-    document.getElementById(
-        id
-      ).innerHTML = '<img src="./img/Muñeco.png" alt="imagen de muñeco">';
-    } else {
-      document.getElementById(id).innerHTML = "";
-    }
-  }
-  breakpoint.addEventListener("change", responsive);
-  responsive(breakpoint);
-  }
-responsiveMedia("right_img", "(min-width: 1025px)");
