@@ -215,16 +215,16 @@ h4 {
 @media screen and (max-width: 768px) {
   .main-container {
     width: 80vw;
-    height: 40vh;
+    height: 46vh;
   }
   .left {
     width: 80vw;
-    height: 36vh;
+    height: 44vh;
   }
   .text-input {
     font-size: 1.7rem;
     width: 77vw;
-    height: 38vh;
+    height: 42vh;
   }
   .left-buttons {
     margin-top: 2%;
@@ -232,15 +232,15 @@ h4 {
   }
   .btn-encriptar {
     width: 80%;
-    height: 100%;
+    height: 80%;
   }
   .btn-desencriptar {
     margin: 1% 0 0 12%;
     width: 80%;
-    height: 100%;
+    height: 80%;
   }
   .right {
-    margin-top: 40%;
+    margin-top: 42%;
     background-image: none;
   }
   .btn-copiar{
